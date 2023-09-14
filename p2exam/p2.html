@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="p2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Jeff pogi</title>
+</head>
+<body>
+    <div class="head">
+        <div class="box1">
+            <center><h1>JEFF LADIGNON POGI</h1></center>
+        </div>
+    </div>
+    <div class="content">
+       <div class="box2">
+        <img id="myImage" src="pic1.jfif" width="200" height="200" alt="Image">
+        <button id="changeButton1">Change Image 1</button>
+        <img id="Image1" src="pic3.jfif" width="200" height="200" alt="Image">
+        <button id="changeButton2">Change Image 2</button>
+        <img id="Image2" src="pic5.jfif" width="200" height="200" alt="Image">
+        <button id="changeButton3">Change Image 3</button>
+       </div>
+    </div>
+    <div class="content1">
+        <div class="box2">
+            <iframe id="video1" width="200" height="200" src="https://www.youtube.com/embed/P4mskkInY_s?si=5liPjHSoWe0G3rHs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <button id="changeVideoButton1">Change Video 1</button>
+            <iframe id="video2" width="200" height="200" src="https://www.youtube.com/embed/P4mskkInY_s?si=IAS31vASQjtTaZ9W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <button id="changeVideoButton2">Change Video 2</button>
+            <iframe id="video3" width="200" height="200" src="https://www.youtube.com/embed/AJjUxiYCfyM?si=ne2vYSx8RnsplPgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <button id="changeVideoButton3">Change Video 3</button>
+        </div>
+     </div>
+    <div class="footer">
+        <div class="child"><a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-youtube"></a></div>
+    </div>
+    <script>
+        const imageElement1 = document.getElementById('myImage');
+        const buttonElement1 = document.getElementById('changeButton1');
+        const imageElement2 = document.getElementById('Image1');
+        const buttonElement2 = document.getElementById('changeButton2');
+        const imageElement3 = document.getElementById('Image2');
+        const buttonElement3 = document.getElementById('changeButton3');
+        const videoElement1 = document.getElementById('video1');
+        const videoElement2 = document.getElementById('video2');
+        const videoElement3 = document.getElementById('video3');
+        const buttonVideoElement1 = document.getElementById('changeVideoButton1');
+        const buttonVideoElement2 = document.getElementById('changeVideoButton2');
+        const buttonVideoElement3 = document.getElementById('changeVideoButton3');
+
+        buttonElement1.addEventListener('click', function () {
+            imageElement1.src = 'pic2.jfif';
+        });
+
+        buttonElement2.addEventListener('click', function () {
+            imageElement2.src = 'pic4.jfif'; 
+        });
+
+        buttonElement3.addEventListener('click', function () {
+            imageElement3.src = 'pic6.jfif'; 
+        });
+
+        buttonVideoElement1.addEventListener('click', function () {
+            videoElement1.src = 'https://www.youtube.com/embed/sWEg4to96-k?si=0VEJlWExzBf1e5QM';
+        });
+
+        buttonVideoElement2.addEventListener('click', function () {
+            videoElement2.src = 'https://www.youtube.com/embed/AJjUxiYCfyM?si=0xyO9LevuBjgaNC2';
+        });
+
+        buttonVideoElement3.addEventListener('click', function () {
+            videoElement3.src = 'https://www.youtube.com/embed/zj-cLpCdWaM?si=aBp5-KAsMxjr7tKA';
+        });
+    </script>
+</body>
+</html>
+<style> .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  </style>
